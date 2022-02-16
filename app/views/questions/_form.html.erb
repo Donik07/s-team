@@ -1,0 +1,18 @@
+<%= form_with model: @question do |f| %>
+
+<div class="mt-4 mb-2">
+  <%= f.label "Тема:" %>
+</div>
+<div>
+  <%= f.text_field :title, required: true, minlength: 2, placeholder: 'Описание к заявке (кратко)', class: "form-control" %>
+</div>
+
+<div class="mt-4 mb-2">
+  <%= f.label "Подробное описание:" %>
+</div>
+<div>
+  <%= f.text_area :body, required: true, minlength: 2, class: "form-control" %>
+</div>
+
+<%= f.submit "Отправить", class: "w-100 btn btn-lg btn-primary", id: 'submit' %>
+<% end %>
