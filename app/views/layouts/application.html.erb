@@ -33,7 +33,7 @@
     <main class="container mt-3">
       <% flash.each do |k, v|%>
         <%= tag.div v, class: "flash alert-#{k}", role: 'alert' %>
-        <%= tag.a "->", href: "?name=del", id: "close" %>
+        <%= tag.a href: "/questions", id: "close" %>
       <% end %>
 
       <%= yield %>

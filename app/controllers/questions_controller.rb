@@ -1,7 +1,6 @@
 class QuestionsController < ApplicationController
     def index
         @questions = Question.all
-        del_flash
     end
 
     def new
@@ -47,11 +46,5 @@ class QuestionsController < ApplicationController
 
     private def question_params
         params.require(:question).permit(:title, :body)
-    end
-
-    private def del_flash
-        if params[:name]
-            flash.clear
-        end
     end
 end
