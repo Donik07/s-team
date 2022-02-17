@@ -47,4 +47,10 @@ class QuestionsController < ApplicationController
     private def question_params
         params.require(:question).permit(:title, :body)
     end
+
+    def get_days arg
+        arg.to_i.div(1.day) !=0 ? "#{arg.div(1.day)} day(s)" : 'Сегодня'
+    end
+    helper_method :get_days
+ 
 end

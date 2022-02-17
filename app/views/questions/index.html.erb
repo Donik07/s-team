@@ -11,7 +11,8 @@
         <p><%= question.body %></p>
       </div>
       <time>
-        <%= question.created_at.strftime('%d/%m %H:%M') %>
+        <%= time = question.created_at.strftime('%d/%m %H:%M') %>
+        <%= get_days time %>
       </time>
       <br>
 
