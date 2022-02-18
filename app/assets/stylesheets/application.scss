@@ -3,6 +3,7 @@
 
 body{
   font-family: system-ui;
+  color: #4e535b;
 }
 #logo{
   font-size: 28px;
@@ -75,33 +76,10 @@ time{
 }
 #close{
   position: fixed;
-  bottom: 33px;
-  right: 10px;
+  bottom: 63px;
+  right: 25px;
   z-index: 2;
-  text-decoration: none;
-  font-size: 20px;
-  color: #730E15;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  margin: 20px auto;
-  cursor: pointer;
-}
-#close:before{
-  content: '+';
   color: #6c757d;
-  position: absolute;
-  z-index: 2;
-  transform: rotate(45deg);
-  font-size: 40px;
-  line-height: 1;
-  top: -5px;
-  left: 6px;
-  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
-}
-#close:hover:after{
-  transform: scale(1);
-}
-#close:hover:before {
-  transform: scale(0.8) rotate(45deg);
+  cursor: pointer;
+  font-size: 27px;
 }

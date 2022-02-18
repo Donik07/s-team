@@ -31,13 +31,16 @@
   </header>
 
     <main class="container mt-3">
-      <% flash.each do |k, v|%>
-        <%= tag.div v, class: "flash alert-#{k}", role: 'alert' %>
-        <%= tag.a href: "/questions", id: "close" %>
-      <% end %>
+
+      <div id="get_close">
+        <% flash.each do |k, v|%>
+          <%= tag.div v, class: "flash alert-#{k}", role: 'alert' %>
+          <button onclick="(document.getElementById('get_close').style.display='none')" type="button" class="close" id="close" >&times;</button >
+        <% end %>
+      </div>
 
       <%= yield %>
-    </main>
 
+    </main>
   </body>
 </html>

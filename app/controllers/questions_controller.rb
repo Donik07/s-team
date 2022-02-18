@@ -49,7 +49,17 @@ class QuestionsController < ApplicationController
     end
 
     def get_days arg
-        arg.to_i.div(1.day) !=0 ? "#{arg.div(1.day)} day(s)" : 'Сегодня'
+        time = arg
+        now = DateTime.now.strftime('%d/%m %H:%M')
+        res = now.to_i - time.to_i
+
+        if res == 0
+            'Сегодня'
+        elsif res == 1
+            'Вчера'
+        else
+            res.to_s + ' дн.'
+        end
     end
     helper_method :get_days
  
