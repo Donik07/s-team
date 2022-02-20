@@ -1,4 +1,5 @@
 class QuestionsController < ApplicationController
+    before_action :get_question, only: %i[show destroy edit update]
     def index
         @questions = Question.all
     end
@@ -18,11 +19,10 @@ class QuestionsController < ApplicationController
     end
 
     def edit
-        @question = Question.find_by id: params[:id]
+
     end
 
     def update
-        @question = Question.find_by id: params[:id]
         if @question.update question_params
             flash[:success] = "Заявка обновлена!"
             redirect_to questions_path
@@ -32,7 +32,6 @@ class QuestionsController < ApplicationController
     end
 
     def destroy
-        @question = Question.find_by id: params[:id]
         @question.destroy
         if @question.destroy
             flash[:danger] = "Ваша заявка была удалена!"
@@ -41,7 +40,7 @@ class QuestionsController < ApplicationController
     end
 
     def show
-        @question = Question.find_by id: params[:id]
+
     end
 
     private def question_params
@@ -62,5 +61,9 @@ class QuestionsController < ApplicationController
         end
     end
     helper_method :get_days
+
+    def get_question
+        @question = Question.find params[:id]
+    end
  
 end
