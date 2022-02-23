@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-    before_action :get_question, only: %i[show destroy edit update]
+    before_action :get_question!, only: %i[show destroy edit update]
     def index
         @questions = Question.all
     end
@@ -40,11 +40,8 @@ class QuestionsController < ApplicationController
     end
 
     def show
-
-    end
-
-    private def question_params
-        params.require(:question).permit(:title, :body)
+        @answer = @question.answers.build
+        @answers = @question.answers.all
     end
 
     def get_days arg
@@ -62,7 +59,13 @@ class QuestionsController < ApplicationController
     end
     helper_method :get_days
 
-    def get_question
+    private
+
+    def question_params
+        params.require(:question).permit(:title, :body)
+    end
+
+    def get_question!
         @question = Question.find params[:id]
     end
  

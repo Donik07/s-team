@@ -1,0 +1,11 @@
+<%= form_with model: [@question, @answer] do |f| %>
+
+  <div class="mt-4 mb-2">
+    <%= f.label "Ответить:" %>
+  </div>
+  <div>
+    <%= f.text_field :body, required: true, minlength: 2, class: "form-control" %>
+  </div>
+
+  <%= f.submit "Ответить", class: "w-100 btn btn-lg btn-primary ml-0", id: 'submit' %>
+<% end %>

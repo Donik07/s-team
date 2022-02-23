@@ -57,6 +57,7 @@ time{
 }
 #submit{
   margin-top: 20px;
+  margin-left: 0;
 }
 .buttons{
   float: right;
@@ -82,4 +83,61 @@ time{
   color: #6c757d;
   cursor: pointer;
   font-size: 27px;
+}
+
+.view{
+  display: flex;
+  justify-content: space-between;
+}
+.description{
+  width: 60%;
+  background-color: #9b060603;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 1px solid #ffd7d7;
+  max-height: 500px;
+}
+.description p{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.comment{
+  width: 40%;
+  border: 1px solid #337ab733;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #efefef21;
+}
+.h2-view{
+  text-align: center;
+}
+#h2-chat{
+  margin: 7px 0 30px;
+}
+.message{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.message p{
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #337ab71f;
+  border-radius: 5px;
+}
+.message-buttons{
+  display: flex;
+  font-size: 11px;
+  margin-left: 25px;
+}
+.message-buttons a{
+  color: #6c757d;
+  text-decoration: none;
+}
+.message-buttons form button{
+  border: none;
+  background-color: #fdfdfd;
+  color: #6c757d;
 }
