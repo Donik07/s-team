@@ -24,7 +24,7 @@ class QuestionsController < ApplicationController
 
     def update
         if @question.update question_params
-            flash[:success] = "Заявка обновлена!"
+            flash[:success] = "Заявка обновлена"
             redirect_to questions_path
         else
             render :edit
@@ -34,7 +34,7 @@ class QuestionsController < ApplicationController
     def destroy
         @question.destroy
         if @question.destroy
-            flash[:danger] = "Ваша заявка была удалена!"
+            flash[:danger] = "Ваша заявка была отменена"
             redirect_to questions_path
         end
     end
@@ -44,20 +44,6 @@ class QuestionsController < ApplicationController
         @answers = @question.answers.all
     end
 
-    def get_days arg
-        time = arg
-        now = DateTime.now.strftime('%d/%m %H:%M')
-        res = now.to_i - time.to_i
-
-        if res == 0
-            'Сегодня'
-        elsif res == 1
-            'Вчера'
-        else
-            res.to_s + ' дн.'
-        end
-    end
-    helper_method :get_days
 
     private
 

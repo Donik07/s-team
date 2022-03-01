@@ -4,7 +4,7 @@
     <%= f.label "Ответить:" %>
   </div>
   <div>
-    <%= f.text_field :body, required: true, minlength: 2, class: "form-control" %>
+    <%= f.text_field :body, required: true, minlength: 2, class: "form-control", autocomplete: "off", autofocus: true %>
   </div>
 
   <%= f.submit "Ответить", class: "w-100 btn btn-lg btn-primary ml-0", id: 'submit' %>

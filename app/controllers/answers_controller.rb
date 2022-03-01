@@ -5,7 +5,6 @@ class AnswersController < ApplicationController
     @answer = @question.answers.build answer_params
 
     if @answer.save
-      flash[:success] = "Ответ отпрален!"
       redirect_to question_path(@question)
     else
       @answers = @question.answers.order created_at: :desc

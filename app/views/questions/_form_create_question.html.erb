@@ -4,7 +4,8 @@
   <%= f.label "Тема:" %>
 </div>
 <div>
-  <%= f.text_field :title, required: true, minlength: 2, placeholder: 'Описание к заявке (кратко)', class: "form-control" %>
+  <%= f.text_field :title, required: true, minlength: 2, placeholder: 'Описание к заявке (кратко)',
+                   class: "form-control", autocomplete: "off", autofocus: true %>
 </div>
 
 <div class="mt-4 mb-2">
