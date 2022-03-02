@@ -9,18 +9,21 @@
   <div class="comment">
     <h2 class="h2-view" id="h2-chat">История общения:</h2>
 
-    <% @answers.each do |answer| %>
-      <div class="message">
-        <p><%= answer.body %></p>
+    <div class="content-comment">
+      <% @answers.each do |answer| %>
+        <div class="message">
+          <p><%= answer.body %></p>
 
-        <div class="message-buttons">
-          <%= link_to 'Изменить', edit_question_answer_path(@question, answer), class: '' %>
-          <%= button_to 'Удалить', question_answer_path(@question, answer), :method => :delete, class: '' %>
+          <div class="message-buttons">
+            <%= link_to 'Изменить', edit_question_answer_path(@question, answer) %>
+            <%= button_to 'Удалить', question_answer_path(@question, answer), :method => :delete %>
+          </div>
+
         </div>
+      <% end %>
+    </div>
 
-      </div>
-    <% end %>
+    <%= render 'questions/form_create_answer' %>
 
-      <%= render 'questions/form_create_answer' %>
   </div>
 </div>

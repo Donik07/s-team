@@ -103,7 +103,7 @@ time{
 }
 .description{
   width: 60%;
-  height: 500px;
+  height: 400px;
   background-color: #fffcfca6;
   margin-right: 10px;
   border-radius: 20px;
@@ -116,13 +116,26 @@ time{
   font-size: 20px;
 }
 .comment{
+  position: relative;
+  height: 540px;
   width: 40%;
-  height: 500px;
   border: 1px solid #337ab733;
   border-radius: 20px;
   padding: 15px;
   background-color: #efefef21;
   box-shadow: 0 0 8px 0.2px #ededed;
+}
+.content-comment{
+  max-height: 290px;
+  overflow-y: scroll;
+}
+.comment form{
+  position: absolute;
+  bottom: 15px;
+  width: 94%;
+}
+.message-buttons form {
+  display: contents;
 }
 .h2-view{
   text-align: center;
