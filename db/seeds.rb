@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 14.times do
   title = Faker::Hipster.sentence(word_count: 3)
   body = Faker::Hipster.paragraph(sentence_count: 4)

@@ -6,3 +6,6 @@ require:
 AllCops:
   NewCops: enabl
   TargetRubyVersion: 3.0.3
+
+Style/Documentation:
+  Enabled: false

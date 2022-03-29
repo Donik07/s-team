@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Authentication
   extend ActiveSupport::Concern
 
@@ -32,13 +34,15 @@ module Authentication
 
     def require_no_authentication
       return unless user_signed_in?
-      flash[:exclamation] = "Вы уже вошли в систему, для этого действия выполните выход."
+
+      flash[:exclamation] = 'Вы уже вошли в систему, для этого действия выполните выход.'
       redirect_to root_path
     end
 
     def require_authentication
       return if user_signed_in?
-      flash[:exclamation] = "Для этого действия необходимо авторизоваться."
+
+      flash[:exclamation] = 'Для этого действия необходимо авторизоваться.'
       redirect_to new_session_path
     end
 
@@ -55,6 +59,5 @@ module Authentication
     end
 
     helper_method :current_user, :user_signed_in?
-
   end
 end

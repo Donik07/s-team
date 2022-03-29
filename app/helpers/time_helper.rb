@@ -1,14 +1,17 @@
+# frozen_string_literal: true
+
 module TimeHelper
-  def get_days arg
+  def get_days(arg)
     now = DateTime.now.strftime('%d/%m %H:%M')
     res = now.to_i - arg.to_i
 
-    if res == 0
+    case res
+    when 0
       'Сегодня'
-    elsif res == 1
+    when 1
       'Вчера'
     else
-      res.to_s + ' дн.'
+      "#{res} дн."
     end
   end
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AnswersController < ApplicationController
   before_action :get_question!
 
@@ -12,9 +14,7 @@ class AnswersController < ApplicationController
     end
   end
 
-  def show
-
-  end
+  def show; end
 
   def edit
     @answer = @question.answers.find params[:id]
@@ -23,7 +23,7 @@ class AnswersController < ApplicationController
   def update
     answer = @question.answers.find params[:id]
     if answer.update answer_params
-      flash[:check] = "Сообщение изменено!"
+      flash[:check] = 'Сообщение изменено!'
       redirect_to question_path(@question)
     else
       render :edit
@@ -33,7 +33,7 @@ class AnswersController < ApplicationController
   def destroy
     answer = @question.answers.find params[:id]
     answer.destroy
-    flash[:times] = "Сообщение удалено!"
+    flash[:times] = 'Сообщение удалено!'
     redirect_to question_path(@question)
   end
 
