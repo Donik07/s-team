@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  resource :session, only: %i[new create destroy]
+  resources :users, only: %i[new create destroy edit update]
+
   resources :questions do
     resources :answers, only: %i[create destroy edit update]
   end
 
   root 'pages#index'
+  get 'session' => 'sessions#destroy'
 end

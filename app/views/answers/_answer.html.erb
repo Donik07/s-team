@@ -1,0 +1,9 @@
+<div class="message">
+  <p><%= answer.body %></p>
+
+  <div class="message-buttons">
+    <%= link_to 'Изменить', edit_question_answer_path(question, answer) %>
+    <%= button_to 'Удалить', question_answer_path(question, answer), :method => :delete %>
+  </div>
+
+</div>

@@ -1,7 +1,9 @@
 class QuestionsController < ApplicationController
     before_action :get_question!, only: %i[show destroy edit update]
+    before_action :require_authentication
+
     def index
-        @questions = Question.all
+        @questions = Question.all.page(params[:page]).per(10)
     end
 
     def new
@@ -11,7 +13,7 @@ class QuestionsController < ApplicationController
     def create
         @question = Question.new question_params
         if @question.save
-            flash[:success] = "Заявка создана!"
+            flash[:check] = "Заявка создана!"
             redirect_to questions_path
         else
             render :new
@@ -24,8 +26,8 @@ class QuestionsController < ApplicationController
 
     def update
         if @question.update question_params
-            flash[:success] = "Заявка обновлена"
-            redirect_to questions_path
+            flash[:check] = "Заявка обновлена"
+            redirect_to questions_path(@questions, "#question-4")
         else
             render :edit
         end
@@ -34,7 +36,7 @@ class QuestionsController < ApplicationController
     def destroy
         @question.destroy
         if @question.destroy
-            flash[:danger] = "Ваша заявка была отменена"
+            flash[:times] = "Ваша заявка была отменена"
             redirect_to questions_path
         end
     end

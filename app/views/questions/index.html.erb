@@ -2,15 +2,26 @@
 
 <div class="mt-3 mb-5">
   <h1>Мои заявки</h1>
-  <%= link_to image_tag("plus.svg"), new_question_url %>
+  <%= link_to image_tag("plus.svg"), new_question_path, id: 'plus' %>
 </div>
 
+
 <% @questions.each do |question| %>
-  <article class="card mb-3">
+  <article class="card mb-3" id="question-<%= question.id %>">
     <div class="card-body">
+      <div class="responsible">
+        <%= image_tag("Novikov.png") %>
+        <%= image_tag("Nikiforova.png") %>
+        <%= image_tag("Sasha.png") %>
+      </div>
+
       <div class="card-info">
-        <h2 class="mb-4 mt-0"><%= question.title %></h2>
-        <p><%= question.body %></p>
+        <h3 class="mb-4 mt-0">
+          <%= truncate question.title, length: 50 %>
+        </h3>
+        <p>
+          <%= truncate question.body, length: 80 %>
+        </p>
       </div>
       <time>
         <% time = question.created_at.strftime('%d/%m %H:%M') %>
@@ -25,5 +36,10 @@
       </div>
 
     </div>
+
+    <a href="#" class="arrow-down">
+      <i></i>
+    </a>
   </article>
 <%end%>
+<%= paginate @questions if @questions.page(1).last_page? %>

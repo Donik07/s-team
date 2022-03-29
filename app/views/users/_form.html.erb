@@ -1,0 +1,48 @@
+<%= form_with model: @user do |f| %>
+
+  <div class="mt-4 mb-2">
+    <%= f.label "Имя:" %>
+  </div>
+  <div>
+    <%= f.text_field :name, required: true, minlength: 2, class: "form-control",
+                     placeholder: "Введите своё имя:", autofocus: true %>
+  </div>
+
+  <div class="mt-4 mb-2">
+    <%= f.label "E-mail:" %>
+  </div>
+  <div>
+    <%= f.email_field :email, required: true, placeholder: 'exemple@mail.ru',
+    class: "form-control", autocomplete: "off" %>
+  </div>
+
+  <% unless @user.new_record? %>
+    <div class="mt-4 mb-2">
+      <%= f.label "Текущий пароль:" %>
+    </div>
+    <div>
+      <%= f.password_field :old_password, required: true, minlength: 8, placeholder: 'Введите свой нынешний пароль',
+                           class: "form-control"%>
+    </div>
+  <% end %>
+
+  <div class="mt-4 mb-2">
+    <%= f.label "Пароль:" %>
+  </div>
+  <div>
+    <%= f.password_field :password, placeholder: 'Придумайте свой пароль...',
+                      class: "form-control"%>
+  </div>
+
+  <div class="mt-4 mb-2">
+    <%= f.label "Повторите пароль:" %>
+  </div>
+  <div>
+    <%= f.password_field :password_confirmation,
+                         placeholder: 'Ваш пароль слишком гениален для того чтобы написать его единожды :)',
+                         class: "form-control"%>
+  </div>
+
+  <%= f.submit (@user.new_record? ? "Зарегистрироваться" : 'Сохранить' ),
+               class: "w-100 btn btn-lg btn-primary", id: 'submit' %>
+<% end %>

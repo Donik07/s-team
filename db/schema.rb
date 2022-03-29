@@ -10,21 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_23_111718) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_24_181738) do
+# Could not dump table "answers" because of following StandardError
+#   Unknown type 'false' for column 'body'
 
-  create_table "answers", force: :cascade do |t|
-    t.text "body"
-    t.integer "question_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["question_id"], name: "index_answers_on_question_id"
-  end
+# Could not dump table "questions" because of following StandardError
+#   Unknown type '' for column 'title'
 
-  create_table "questions", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table "users", force: :cascade do |t|
+    t.string "email", null: false
+    t.string "name"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "remember_token_digest"
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
   add_foreign_key "answers", "questions"

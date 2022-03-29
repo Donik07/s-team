@@ -1,8 +1,7 @@
 module TimeHelper
   def get_days arg
-    time = arg
     now = DateTime.now.strftime('%d/%m %H:%M')
-    res = now.to_i - time.to_i
+    res = now.to_i - arg.to_i
 
     if res == 0
       'Сегодня'

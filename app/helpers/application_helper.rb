@@ -7,4 +7,5 @@ module ApplicationHelper
       base_name
     end
   end
+
 end
