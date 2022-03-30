@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class AnswersController < ApplicationController
-  before_action :get_question!
+  before_action :set_question!
 
   def create
     @answer = @question.answers.build answer_params
@@ -43,7 +43,7 @@ class AnswersController < ApplicationController
     params.require(:answer).permit(:body)
   end
 
-  def get_question!
+  def set_question!
     @question = Question.find params[:question_id]
   end
 end

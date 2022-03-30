@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class QuestionsController < ApplicationController
-  before_action :get_question!, only: %i[show destroy edit update]
+  before_action :set_question!, only: %i[show destroy edit update]
   before_action :require_authentication
 
   def index
@@ -52,7 +52,7 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:title, :body)
   end
 
-  def get_question!
+  def set_question!
     @question = Question.find params[:id]
   end
 end
