@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32b01c2f-3c6c-4cac-81d7-361fa647d705" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220116103439_create_questions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220401193309_create_questions.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220401202225_add_user_id_to_answers.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/time_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/time_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/answer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/answer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/question.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,13 +61,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/stylesheets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/migrate" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ganie\ruby\s-team\db\migrate" />
       <recent name="C:\Users\Ganie\ruby\s-team\app\assets\stylesheets" />
       <recent name="C:\Users\Ganie\ruby\s-team\app\assets\images" />
     </key>
@@ -203,6 +211,7 @@
       <workItem from="1648419441476" duration="426000" />
       <workItem from="1648557470591" duration="4329000" />
       <workItem from="1648580072063" duration="5317000" />
+      <workItem from="1648848318269" duration="2344000" />
     </task>
     <servers />
   </component>
@@ -224,6 +233,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/s_team@Development__s_team.rcov" NAME="Development: s-team Coverage Results" MODIFIED="1648841629326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="s-team" />
+    <SUITE FILE_PATH="coverage/s_team@Development__s_team.rcov" NAME="Development: s-team Coverage Results" MODIFIED="1648850439454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="s-team" />
   </component>
 </project>

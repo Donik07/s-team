@@ -10,21 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_01_193309) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_01_220319) do
 # Could not dump table "answers" because of following StandardError
 #   Unknown type '' for column 'body'
 
-  create_table "questions", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+# Could not dump table "questions" because of following StandardError
+#   Unknown type '' for column 'title'
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
-    t.string "name"
-    t.string "password_digest"
+    t.string "name", null: false
+    t.string "password_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "remember_token_digest"
@@ -33,4 +29,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_01_193309) do
 
   add_foreign_key "answers", "questions"
   add_foreign_key "answers", "users"
+  add_foreign_key "questions", "users"
 end

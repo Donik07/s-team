@@ -13,9 +13,7 @@
   <div class="comment">
     <h2 class="h2-view" id="h2-chat">История общения:</h2>
 
-    <% unless @answers.present? %>
-      <%= render 'animation_empty_messages' %>
-    <% end %>
+
 
     <div class="content-comment">
       <%= render partial: 'answers/answer', collection: @answers,

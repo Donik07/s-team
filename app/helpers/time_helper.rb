@@ -5,11 +5,12 @@ module TimeHelper
     now = DateTime.now.strftime('%d/%m %H:%M')
     res = now.to_i - arg.to_i
 
-    case res
-    when 0
+    if res == 0
       'Сегодня'
-    when 1
+    elsif res == 1
       'Вчера'
+    elsif res < 0
+      'В прошлом месяце'
     else
       "#{res} дн."
     end
