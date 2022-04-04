@@ -1,9 +1,19 @@
-<div class="message">
-  <p><%= answer.body %></p>
+<% if answer.user.id == current_user.id %>
+  <div class="my_message">
+    <div class="message-buttons">
+      <%= link_to 'Изменить', edit_question_answer_path(question, answer), class: 'buttons_message' %>
+      <%= button_to 'Удалить', question_answer_path(question, answer), class: 'buttons_message', :method => :delete %>
+    </div>
 
-  <div class="message-buttons">
-    <%= link_to 'Изменить', edit_question_answer_path(question, answer) %>
-    <%= button_to 'Удалить', question_answer_path(question, answer), :method => :delete %>
+    <div>
+      <p><%= answer.body %></p>
+    </div>
   </div>
-
-</div>
+<% else %>
+  <div class="message">
+    <div>
+      <h6><%= answer.user.name %></h6>
+      <p><%= answer.body %></p>
+    </div>
+  </div>
+<% end %>

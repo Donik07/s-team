@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
   before_action :require_authentication
 
   def index
-    @questions = Question.all.page(params[:page]).per(10)
+    @questions = Question.includes(:user).where(user_id: current_user).page(params[:page]).per(10)
   end
 
   def new
@@ -13,7 +13,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new question_params
+    @question = current_user.questions.build question_params
     if @question.save
       flash[:check] = 'Заявка создана!'
       redirect_to questions_path

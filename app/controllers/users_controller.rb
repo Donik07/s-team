@@ -23,7 +23,7 @@ class UsersController < ApplicationController
   def edit; end
 
   def update
-    if @user.update user_paramsk
+    if @user.update user_params
       flash[:check] = 'Данные изменены'
       redirect_to edit_user_path(@user)
     else

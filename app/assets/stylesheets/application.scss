@@ -229,12 +229,23 @@ body{
   #h2-chat{
     margin: 6px 0 30px;
   }
-  .message{
+  .message, .my_message{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  h6{
+    margin: 3px 0;
+    color: #337ab7;
+  }
   .message p{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #efefef;
+    border-radius: 5px;
+  }
+  .my_message p{
     margin: 0;
     margin-bottom: 5px;
     padding: 10px;
@@ -242,18 +253,27 @@ body{
     border-radius: 5px;
   }
   .message-buttons{
-    display: flex;
     font-size: 11px;
-    margin-left: 25px;
   }
   .message-buttons a{
     color: #6c757d;
     text-decoration: none;
   }
+  .buttons_message{
+    opacity: 0.6;
+  }
   .message-buttons form button{
     border: none;
     background-color: #fdfdfd;
     color: #6c757d;
+  }
+  .message-buttons a:hover{
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .buttons_message:hover{
+    opacity: 1;
+    transition: 0.3s;
   }
 
 

@@ -2,9 +2,10 @@
 
 class AnswersController < ApplicationController
   before_action :set_question!
+  before_action :my_message?, only: %i[edit update destroy]
 
   def create
-    @answer = @question.answers.build answer_params
+    @answer = @question.answers.build answer_create_params
 
     if @answer.save
       redirect_to question_path(@question)
@@ -22,7 +23,7 @@ class AnswersController < ApplicationController
 
   def update
     answer = @question.answers.find params[:id]
-    if answer.update answer_params
+    if answer.update answer_update_params
       flash[:check] = 'Сообщение изменено!'
       redirect_to question_path(@question)
     else
@@ -39,11 +40,24 @@ class AnswersController < ApplicationController
 
   private
 
-  def answer_params
+  def my_message?
+    answer = @question.answers.find params[:id]
+    return if answer.user.id == current_user.id
+
+    flash[:times] = "Вы не можете редактировать чужое сообщение!"
+    redirect_to questions_path
+  end
+
+  def answer_create_params
+    params.require(:answer).permit(:body).merge(user: current_user)
+  end
+
+  def answer_update_params
     params.require(:answer).permit(:body)
   end
 
   def set_question!
     @question = Question.find params[:question_id]
   end
+
 end
