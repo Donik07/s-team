@@ -29,6 +29,10 @@ body{
   color: #4e535b;
   height: 100%;
 }
+main{
+  width: 76%;
+  margin: 0 auto;
+}
 .main{
   height: 100%;
 }
@@ -168,7 +172,7 @@ body{
   }
   .go-back{
     position: absolute;
-    left: 6%;
+    left: 7%;
     top: 92px;
     border-radius: 50%;
   }

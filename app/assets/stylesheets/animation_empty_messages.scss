@@ -7,7 +7,7 @@
   content: '';
 }
 .aquarium__table {
-  left: 11.5%; top: 381px;
+  left: 13.5%; top: 381px;
   width: 341px; height: 6px;
   border-radius: 3px;
   background: black;
@@ -21,7 +21,7 @@
   background: #00AAFF;
 }
 .aquarium__aquarium {
-  left: 26%; top: 223px;
+  left: 28%; top: 223px;
   width: 209px; height: 148px;
   box-sizing: border-box;
   border: 5px solid black;
@@ -38,7 +38,7 @@
   animation: sponge-water 2.5s linear infinite;
 }
 .aquarium__drops {
-  top: 142px; left: 28%;
+  top: 142px; left: 30%;
   width: 190px; height: 125px;
   overflow: hidden;
 }
@@ -170,7 +170,7 @@
 }
 .aquarium__sponge-box {
   width: 86px; height: 106px;
-  left: 40%; top: 233px;
+  left: 42%; top: 233px;
   animation: sponge-box 2.5s linear infinite;
 }
 .aquarium__body {
