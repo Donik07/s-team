@@ -12,13 +12,16 @@
       <div class="responsible">
         <%= image_tag("Novikov.png") %>
         <%= image_tag("Nikiforova.png") %>
-        <%= image_tag("Sasha.png") %>
+        <%= image_tag("Artur.png") %>
       </div>
 
       <div class="card-info">
         <h3 class="mb-4 mt-0">
           <%= truncate question.title, length: 50 %>
           <%= question.user.name %>
+          <% question.users.each do |f| %>
+          <%= f.name %>
+            <% end %>
         </h3>
         <p>
           <%= truncate question.body, length: 80 %>

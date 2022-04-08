@@ -3,6 +3,7 @@
 class QuestionsController < ApplicationController
   before_action :set_question!, only: %i[show destroy edit update]
   before_action :require_authentication
+  before_action :fetch_question_responsible, only: %i[new edit]
 
   def index
     @questions = Question.includes(:user).where(user_id: current_user).page(params[:page]).per(10)
@@ -49,10 +50,14 @@ class QuestionsController < ApplicationController
   private
 
   def question_params
-    params.require(:question).permit(:title, :body)
+    params.require(:question).permit(:title, :body, question_responsible_ids: [])
   end
 
   def set_question!
     @question = Question.find params[:id]
+  end
+
+  def fetch_question_responsible
+    @question_responsibles = User.all
   end
 end

@@ -15,5 +15,13 @@
   <%= f.text_area :body, required: true, minlength: 2, class: "form-control" %>
 </div>
 
+<div class="mt-4 mb-2">
+  <%= f.label "Ответственный:" %>
+</div>
+<div>
+  <%= f.collection_select :question_responsible_ids, users, :id, :name, {}, multiple: true %>
+</div>
+
+
 <%= f.submit "Отправить", class: "w-100 btn btn-lg btn-primary", id: 'submit' %>
 <% end %>
