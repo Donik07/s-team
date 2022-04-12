@@ -19,9 +19,6 @@
         <h3 class="mb-4 mt-0">
           <%= truncate question.title, length: 50 %>
           <%= question.user.name %>
-          <% question.users.each do |f| %>
-          <%= f.name %>
-            <% end %>
         </h3>
         <p>
           <%= truncate question.body, length: 80 %>
@@ -47,3 +44,8 @@
   </article>
 <%end%>
 <%= paginate @questions if @questions.page(1).last_page? %>
+
+<script type="text/javascript" charset="utf-8">
+    var obj = document.getElementById("nav-2")
+    obj.classList.toggle("nav_border")
+</script>

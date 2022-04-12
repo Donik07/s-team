@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="development">
-  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.32">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.38">
     <root id="1">
       <ServerVersion>3.34.0</ServerVersion>
     </root>
@@ -1375,7 +1375,6 @@
     </foreign-key>
     <index id="504" parent="491" name="index_answers_on_question_id">
       <ColNames>question_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="505" parent="491">
       <ColNames>id</ColNames>
@@ -1402,7 +1401,6 @@
     </column>
     <index id="510" parent="492" name="sqlite_autoindex_ar_internal_metadata_1">
       <ColNames>key</ColNames>
-      <ColumnCollations></ColumnCollations>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
@@ -1446,7 +1444,6 @@
     </column>
     <index id="519" parent="494" name="sqlite_autoindex_schema_migrations_1">
       <ColNames>version</ColNames>
-      <ColumnCollations></ColumnCollations>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
@@ -1482,10 +1479,10 @@
       <Position>2</Position>
     </column>
     <column id="528" parent="497" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="529" parent="497" name="email">
       <DataType>varchar|0s</DataType>
@@ -1516,7 +1513,6 @@
     </column>
     <index id="535" parent="497" name="index_users_on_email">
       <ColNames>email</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="536" parent="497">

@@ -14,8 +14,8 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = current_user.questions.build question_params
-    if @question.save
+    question = current_user.questions.build question_params
+    if question.save
       flash[:check] = 'Заявка создана!'
       redirect_to questions_path
     else
@@ -28,7 +28,7 @@ class QuestionsController < ApplicationController
   def update
     if @question.update question_params
       flash[:check] = 'Заявка обновлена'
-      redirect_to questions_path(@questions, '#question-4')
+      redirect_to questions_path(@questions)
     else
       render :edit
     end

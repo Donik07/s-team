@@ -32,7 +32,7 @@
 
     <div class="date-now">
       <h4><%= Time.new.day %></h4>
-      <p><%= Time.new.wday %></p>
+      <p><%= days_weeks %></p>
     </div>
 
   <header class=" container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -41,9 +41,9 @@
     </a>
 
     <ul class= "nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><%= link_to 'Главная', root_path, class: 'nav-link px-2 link-secondary fw-bold' %></li>
-      <li><%= link_to 'Мои заявки', questions_path, class: 'nav-link px-2 link-secondary fw-bold ' %></li>
-      <li><%= link_to 'Создать заявку',new_question_path, class: 'nav-link px-2 link-secondary fw-bold' %></li>
+      <li id="nav-1"><%= link_to 'Главная', root_path, class: 'nav-link px-2 link-secondary fw-bold' %></li>
+      <li id="nav-2"><%= link_to 'Мои заявки', questions_path, class: 'nav-link px-2 link-secondary fw-bold ' %></li>
+      <li id="nav-3"><%= link_to 'Создать заявку',new_question_path, class: 'nav-link px-2 link-secondary fw-bold' %></li>
     </ul>
 
     <div class="col-md-3 text-end">
@@ -93,6 +93,7 @@
 
         <%= yield %>
 
+      <% if flash.present? %>
         <script type="text/javascript" charset="utf-8">
           var fade_effects = document.getElementById("get_close")
 
@@ -100,6 +101,7 @@
           setTimeout(() => {fade_effects.classList.toggle("fade-out")}, 4000);
           setTimeout(() => {fade_effects.style.display='none'}, 5500);
         </script>
+      <% end %>
 
         <script type="text/javascript" charset="utf-8">
             var inc = 1000;

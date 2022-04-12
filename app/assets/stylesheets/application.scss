@@ -48,6 +48,17 @@ main{
   color: #d9534f;
   border-radius: 7px;
 }
+.dropdown,{
+  margin: 0;
+  color: #6c757d;
+}
+.dropdown a{
+  color: #6c757d;
+  font-weight: 500;
+}
+.nav-link:focus, .nav-link:hover {
+  color: #6c757d;
+}
 #dropdown-menu{
   left: 38%;
 }
@@ -56,6 +67,10 @@ main{
   text-align: center;
   border-radius: 7px;
   margin: 0 auto;
+  color: #6c757d;
+}
+.nav_border{
+  border-bottom: 1px solid #6c757d;
 }
 #exit:hover{
   background-color: #c9302c;
@@ -81,6 +96,7 @@ main{
   .card{
     border-radius: 7px;
     box-shadow: 0 0 8px 0.2px #ededed;
+    border-left: 3px solid gainsboro;
   }
   .card-body{
     display: flex;
