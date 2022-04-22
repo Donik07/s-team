@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     user = User.new user_params
     if user.save
       sign_in user
-      flash[:welcome] = "#{user.name}, добро пожаловать в S-TEAM!"
+      flash[:welcome] = "#{user.first_name}, добро пожаловать в S-TEAM!"
       redirect_to questions_path
     else
       render :new
@@ -39,6 +39,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation, :old_password)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :old_password)
   end
 end

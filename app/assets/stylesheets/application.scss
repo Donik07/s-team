@@ -51,6 +51,9 @@ main{
 .dropdown,{
   margin: 0;
   color: #6c757d;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .dropdown a{
   color: #6c757d;
@@ -109,7 +112,7 @@ main{
     justify-content: space-around;
   }
   .responsible img{
-    width: 65px;
+    width: 72px;
     padding: 3px;
   }
   .responsible img:hover{
@@ -118,6 +121,40 @@ main{
     transform: scale(1.1);
     border-radius: 7px;
   }
+  .responsible img:hover ~ .responsible_fio{
+    transition: 0.5s;
+    opacity: 1;
+  }
+  .responsible_fio{
+    position: absolute;
+    color: #337ab7;
+    font-size: 15px;
+    opacity: 0;
+    border-bottom: 2px solid #337ab7;
+  }
+  .responsible_fio :hover{
+    display: block;
+  }
+  .responsible_show{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .responsible_show img{
+    border: 1px solid;
+    border-radius: 100%;
+    width: 40px;
+  }
+.responsible_show img:hover{
+  transition: 0.3s;
+  background-color: rgba(51, 122, 182, 0.16);
+  transform: scale(1.1);
+  border-radius: 7px;
+}
   .card-info{
     margin: 0 auto;
     min-width: 40%;
@@ -168,6 +205,7 @@ main{
   .buttons{
     align-items: end;
     display: flex;
+    justify-content: flex-end;
   }
   .btn{
     margin: 3px;
@@ -202,7 +240,7 @@ main{
   }
   .description{
     width: 60%;
-    height: 400px;
+    height: 100%;
     background-color: #fffcfca6;
     margin-right: 10px;
     border-radius: 20px;
@@ -210,13 +248,12 @@ main{
     box-shadow: 0 0 8px 0.2px #ededed;
   }
   .description p{
-    text-align: center;
     font-size: 16px;
-    padding: 3px;
+    padding: 15px;
   }
   .comment{
     position: relative;
-    height: 540px;
+    height: 600px;
     width: 40%;
     border: 1px solid #337ab733;
     border-radius: 20px;
@@ -225,7 +262,7 @@ main{
     box-shadow: 0 0 8px 0.2px #ededed;
   }
   .content-comment{
-    max-height: 290px;
+    max-height: 370px;
     overflow-y: scroll;
   }
   .content-comment::-webkit-scrollbar-track {

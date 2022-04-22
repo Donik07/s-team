@@ -8,12 +8,13 @@ class User < ApplicationRecord
   has_many :questions, dependent: :destroy
   has_many :answers, dependent: :destroy
   has_many :question_responsibles, dependent: :destroy
+  has_many :avatars, dependent: :destroy
 
   validate :password_presence
   validates :password, confirmation: true, allow_blank: true, length: { minimum: 8, maximum: 80 }
   validate :correct_old_password, on: :update
 
-  validates :name, presence: true
+  validates :first_name, presence: true
   validates :email, presence: true, uniqueness: true, 'valid_email_2/email': true
 
   def remember_me

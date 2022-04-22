@@ -1,12 +1,26 @@
 <%= form_with model: @user do |f| %>
 
-  <div class="mt-4 mb-2">
-    <%= f.label "Имя:" %>
+<div class="fio">
+  <div class="first_name">
+    <div class="mt-4 mb-2">
+      <%= f.label "Имя:" %>
+    </div>
+    <div>
+      <%= f.text_field :first_name, required: true, minlength: 2, class: "form-control",
+                       placeholder: "Введите своё имя:", autofocus: true %>
+    </div>
   </div>
-  <div>
-    <%= f.text_field :name, required: true, minlength: 2, class: "form-control",
-                     placeholder: "Введите своё имя:", autofocus: true %>
+
+  <div class="last_name">
+    <div class="mt-4 mb-2">
+      <%= f.label "Фамилия:" %>
+    </div>
+    <div>
+      <%= f.text_field :last_name, required: true, minlength: 2, class: "form-control",
+                       placeholder: "Введите свою фамилию:"%>
+    </div>
   </div>
+</div>
 
   <div class="mt-4 mb-2">
     <%= f.label "E-mail:" %>
@@ -26,6 +40,9 @@
     </div>
   <% end %>
 
+  <a href="#" id="qwe" onclick="(document.getElementById('change_password', 'qwe').style.display='block')">Сменить пароль</a>
+
+<div id="change_password">
   <div class="mt-4 mb-2">
     <%= f.label "Пароль:" %>
   </div>
@@ -42,6 +59,8 @@
                          placeholder: 'Ваш пароль слишком гениален для того чтобы написать его единожды :)',
                          class: "form-control"%>
   </div>
+  <a href="#" onclick="(document.getElementById('change_password').style.display='none')">Отменить изменение</a>
+</div>
 
   <%= f.submit (@user.new_record? ? "Зарегистрироваться" : 'Сохранить' ),
                class: "w-100 btn btn-lg btn-primary", id: 'submit' %>

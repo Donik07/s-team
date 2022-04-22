@@ -10,9 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_06_203549) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_16_173833) do
 # Could not dump table "answers" because of following StandardError
-#   Unknown type '' for column 'body'
+#   Unknown type 'false' for column 'body'
+
+  create_table "avatars", force: :cascade do |t|
+    t.text "photo"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_avatars_on_user_id"
+  end
 
   create_table "question_responsibles", force: :cascade do |t|
     t.integer "question_id", null: false
@@ -29,17 +35,20 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_06_203549) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
-    t.string "name", null: false
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "remember_token_digest"
     t.string "password_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "remember_token_digest"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
   add_foreign_key "answers", "questions"
   add_foreign_key "answers", "users"
+  add_foreign_key "avatars", "users"
   add_foreign_key "question_responsibles", "questions"
   add_foreign_key "question_responsibles", "users"
   add_foreign_key "questions", "users"
+  add_foreign_key "questions", "users", column: "users_id"
 end

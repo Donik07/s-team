@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     if user&.authenticate(params[:password])
       sign_in user
       remember(user) if params[:remember_me] == '1'
-      flash[:check] = "Добрый день, #{current_user.name}!"
+      flash[:check] = "Добрый день, #{current_user.first_name}!"
       redirect_to questions_path
     else
       flash[:times] = 'Логин или пароль введён не правильно :('

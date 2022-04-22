@@ -49,7 +49,9 @@
     <div class="col-md-3 text-end">
       <% if user_signed_in? %>
         <p class="dropdown" data-toggle="dropdown">
-          <%= link_to current_user.name, '#', class: 'nav-link px-2 dropdown-toggle', data: {"bs-toggle": 'dropdown'} %>
+          <% fio = set_responsible_fio current_user.id %>
+          <%= link_to fio, "#", class: 'nav-link px-2 dropdown-toggle', data: {"bs-toggle": 'dropdown'} %>
+          <%= image_tag "#{set_avatar(current_user)}", class: "my_avatar" %>
         </p>
 
         <ul class="dropdown-menu" id="dropdown-menu">

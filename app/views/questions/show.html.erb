@@ -1,10 +1,27 @@
 <% provide :page_name, "Заявка" %>
 
+<div class="responsible_show">
+
+  <div>
+    <% creator_avatar = set_avatar @question.user.id %>
+    <% responsible_avatar = set_avatar @question.users_id %>
+    <%= image_tag("#{creator_avatar}") %>
+    <%= image_tag("#{responsible_avatar}") %>
+  </div>
+
+  <div class="buttons buttons-show">
+    <%= link_to 'Выполнить', '1', class: 'btn btn-success text-white' %>
+    <%= link_to 'Изменить', edit_question_path, class: 'btn btn-secondary text-white' %>
+    <%= button_to 'Отменить', question_path, :method => :delete, class: 'btn btn-danger' %>
+  </div>
+
+</div>
+
 <div class="view">
   <div class="go-back">
     <%= link_to image_tag("go_back.png"), _filtered_referrer %>
   </div>
-  
+
   <div class="description">
     <h2 class="h2-view"><%= @question.title %></h2>
     <p><%= @question.body %></p>
