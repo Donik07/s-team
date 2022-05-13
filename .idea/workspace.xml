@@ -2,31 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32b01c2f-3c6c-4cac-81d7-361fa647d705" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/helpers/set_avatar_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/set_responsible_fio_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/avatar.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220412210039_add_responsible_id_to_question.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220416173833_create_avatars.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/archives_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/set_status_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/status.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/archives/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220426183703_create_statuses.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220426195027_add_status_in_question.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/animation_empty_messages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/animation_empty_messages.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/edit_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/edit_profile.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/question_responsibles_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/error_handling.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/error_handling.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/question.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/question_responsibles/_question_responsible.html.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/questions/_form_create_question.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/_form_create_question.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/questions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/questions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220307162058_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220307162058_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220324181738_add_remember_token_digest_to_users.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +44,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Ruby File" />
-        <option value="ERB File" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="ERB File" />
       </list>
     </option>
   </component>
@@ -74,6 +81,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Ganie/ruby/s-team/app/helpers&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
@@ -249,6 +258,27 @@
       <workItem from="1650190844789" duration="17681000" />
       <workItem from="1650216726596" duration="662000" />
       <workItem from="1650397828707" duration="1928000" />
+      <workItem from="1650610055996" duration="17133000" />
+      <workItem from="1650751634883" duration="1596000" />
+      <workItem from="1650792066504" duration="628000" />
+      <workItem from="1650979373874" duration="320000" />
+      <workItem from="1650997358965" duration="9203000" />
+      <workItem from="1651062714742" duration="7169000" />
+      <workItem from="1651083702986" duration="9104000" />
+      <workItem from="1651180480326" duration="20000" />
+      <workItem from="1651246337608" duration="18046000" />
+      <workItem from="1651410716283" duration="3762000" />
+      <workItem from="1651415267872" duration="1041000" />
+      <workItem from="1651483845498" duration="6887000" />
+      <workItem from="1651508080612" duration="15092000" />
+      <workItem from="1651582950944" duration="654000" />
+      <workItem from="1651589840514" duration="13152000" />
+      <workItem from="1651648767015" duration="663000" />
+      <workItem from="1651663930868" duration="8720000" />
+      <workItem from="1651843760504" duration="3690000" />
+      <workItem from="1652118471793" duration="391000" />
+      <workItem from="1652215976221" duration="1442000" />
+      <workItem from="1652425401764" duration="1833000" />
     </task>
     <servers />
   </component>
@@ -270,6 +300,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/s_team@Development__s_team.rcov" NAME="Development: s-team Coverage Results" MODIFIED="1650397841676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="s-team" />
+    <SUITE FILE_PATH="coverage/s_team@Development__s_team.rcov" NAME="Development: s-team Coverage Results" MODIFIED="1652425408438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="s-team" />
   </component>
 </project>

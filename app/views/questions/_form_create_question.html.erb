@@ -19,9 +19,8 @@
   <%= f.label "Ответственный:" %>
 </div>
 <div>
-  <%= f.collection_select :users_id, users, :id, :first_name, {}%>
+  <%= f.collection_select :users_id, users, :id, :last_name %>
 </div>
-
 
 <%= f.submit "Отправить", class: "w-100 btn btn-lg btn-primary", id: 'submit' %>
 <% end %>

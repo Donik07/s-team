@@ -36,6 +36,7 @@ gem 'valid_email2', '~> 4.0'
 gem 'rubocop-performance', '~> 1.13.3', require: false
 gem 'rubocop-rails', '~> 2.14.2', require: false
 
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

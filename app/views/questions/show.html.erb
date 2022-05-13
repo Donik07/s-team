@@ -1,18 +1,33 @@
-<% provide :page_name, "Заявка" %>
+<% provide :page_name, "#{@question.title}" %>
+<% status = @question.statuses_id %>
 
 <div class="responsible_show">
 
   <div>
     <% creator_avatar = set_avatar @question.user.id %>
     <% responsible_avatar = set_avatar @question.users_id %>
-    <%= image_tag("#{creator_avatar}") %>
-    <%= image_tag("#{responsible_avatar}") %>
+    <%= image_tag("#{creator_avatar}", title: "#{set_responsible_fio @question.user.id}") %>
+    <%= image_tag("#{responsible_avatar}", title: "#{set_responsible_fio @question.users_id}") %>
   </div>
 
   <div class="buttons buttons-show">
-    <%= link_to 'Выполнить', '1', class: 'btn btn-success text-white' %>
+    <% if status == 1 %>
+      <%= button_to 'Взять в работу', start_working_question_path, class: 'btn btn-success text-white' %>
+    <% elsif status == 2 %>
+      <%= button_to 'Выполнить', completed_working_question_path, class: 'btn btn-success text-white' %>
+    <% elsif status == 4 %>
+      <%= button_to 'Сделать активной', back_to_active_question_path, class: 'btn btn-success text-white' %>
+    <% else %>
+      <%= button_to 'Вернуть в работу', start_working_question_path, class: 'btn btn-warning text-white' %>
+    <% end %>
+
     <%= link_to 'Изменить', edit_question_path, class: 'btn btn-secondary text-white' %>
-    <%= button_to 'Отменить', question_path, :method => :delete, class: 'btn btn-danger' %>
+
+    <% if status == 4 %>
+      <%= button_to 'Удалить', question_path(@question), :method => :delete, class: 'btn btn-danger' %>
+    <% else %>
+      <%= button_to 'Отменить', send_to_archive_question_path, class: 'btn btn-danger' %>
+    <% end %>
   </div>
 
 </div>
@@ -22,9 +37,50 @@
     <%= link_to image_tag("go_back.png"), _filtered_referrer %>
   </div>
 
-  <div class="description">
-    <h2 class="h2-view"><%= @question.title %></h2>
-    <p><%= @question.body %></p>
+  <div class="question-content">
+    <div class="description">
+      <h2 class="h2-view" id="h2-view"><%= @question.title %></h2>
+      <p><%= @question.body %></p>
+    </div>
+
+    <div class="files">
+      <p>Перетащите документ мышкой или нажимете <b><a href="#">здесь</a></b> чтобы прикрепить файл</p>
+    </div>
+
+    <div class="question-info">
+      <% created_at = @question.created_at %>
+      <% updated_at = @question.updated_at %>
+      <% created_user = @question.user.id %>
+      <div class="question-info-left">
+        <p>
+          <b>Создано:</b> <%= created_at.strftime("%d.%m.%y") %>
+          <br>
+          <b>Время:</b> <%= created_at.strftime("%H:%m") %> (часы/минуты)
+          <br>
+          <b>Создатель:</b> <%= set_responsible_fio created_user %>
+        </p>
+      </div>
+      <div class="question-info-right">
+        <p>
+          <b>Обновлено:</b> <%= updated_at.strftime("%d.%m.%y") %>
+          <br>
+          <b>Время выполнения:</b> 4 часа
+          <br>
+          <b>Исполнитель:</b> <%= set_responsible_fio @question.users_id %>
+        </p>
+      </div>
+    </div>
+    <div class="question-end"></div>
+    <div class="status">
+      <h3>Статус заявки:
+        <span>
+          <%= set_status status %>
+      </span>
+      </h3>
+    </div>
+    <div class="question-end"></div>
+
+      <p id="question-id">id: <%= @question.id %></p>
   </div>
 
   <div class="comment">
@@ -40,6 +96,8 @@
     </div>
 
     <%= render 'questions/form_create_answer' %>
+
+
 
   </div>
 </div>

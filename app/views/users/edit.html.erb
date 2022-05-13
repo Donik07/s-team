@@ -4,7 +4,7 @@
 
 <div class="edit-profile">
   <div class="image-profile hover-image-scale">
-    <%= image_tag("Sasha.png", class: 'hover-image-scale') %>
+    <%= image_tag("#{set_avatar(current_user.id)}", class: 'hover-image-scale') %>
     <a href="#" class="btn btn-danger mt-4">Изменить</a>
   </div>
 

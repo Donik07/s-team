@@ -10,3 +10,29 @@
     var obj = document.getElementById("nav-3")
     obj.classList.toggle("nav_border")
 </script>
+
+<script type="text/javascript" charset="utf-8">
+    document.addEventListener("turbolinks:load", function() {
+        document.querySelectorAll('.js-multiple-select').forEach((element) => {
+            let opts = {
+                valueField: 'id',
+                labelField: 'name',
+                searchField: 'name',
+                create: false,
+                load: function(query, callback) {
+                    const url = element.dataset.ajaxUrl + '.json?term=' + encodeURIComponent(query)
+
+                    fetch(url)
+                        .then(response => response.json())
+                        .then (json => {
+                            callback(json)
+                        }).catch(() => {
+                        callback()
+                    })
+                }
+            }
+
+            new TomSelect(element, opts)
+        })
+    })
+</script>

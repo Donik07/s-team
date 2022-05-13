@@ -5,6 +5,7 @@ module ErrorHandling
 
   included do
     rescue_from ActiveRecord::RecordNotFound, with: :notfound
+    rescue_from ActionController::RoutingError, with: :notfound
 
     private
 

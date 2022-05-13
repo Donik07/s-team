@@ -7,7 +7,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
@@ -56,6 +56,7 @@
 
         <ul class="dropdown-menu" id="dropdown-menu">
           <li><%= link_to 'Профиль', edit_user_path(current_user), class: "dropdown-item" %></li>
+          <li><%= link_to 'Архив', archives_path, class: "dropdown-item" %></li>
           <div class="dropdown-divider"></div>
           <li><%= link_to 'Выход', session_path, class: "dropdown-item btn-danger text-white",
                          id: "exit", :method => :delete %></li>
@@ -129,6 +130,23 @@
             setInterval(clock, inc);
 
         </script>
+<!--        <script>-->
+<!--          var text = "Я сам печатаюсь и ты ни*уя с этим не сделаешь"-->
+<!--          var delay = 200; //скорость текста-->
+<!--          var elem = document.getElementById("h2-view");-->
+<!--          //mocha --reporter=doc | cat docs/head.html - docs/tail.html > docs/test.html-->
+<!--          var print_text = function(text, elem, delay) {-->
+<!--            if(text.length > 0) {-->
+<!--            elem.innerHTML += text[0];-->
+<!--            setTimeout(-->
+<!--          function() {-->
+<!--            print_text(text.slice(1), elem, delay);-->
+<!--          }, delay-->
+<!--          );-->
+<!--          }-->
+<!--          }-->
+<!--          print_text(text, elem, delay);-->
+<!--        </script>-->
       </main>
     </div>
   </body>

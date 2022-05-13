@@ -4,6 +4,10 @@ import "controllers"
 
 import '@popperjs/core'
 import 'bootstrap/js/dist/dropdown'
+
+// import './select'
+
+
 //= require jquery
 //= require bootstrap-sprockets
 

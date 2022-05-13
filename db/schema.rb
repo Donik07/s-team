@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_16_173833) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_26_195027) do
 # Could not dump table "answers" because of following StandardError
 #   Unknown type 'false' for column 'body'
 
@@ -33,6 +33,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_16_173833) do
 # Could not dump table "questions" because of following StandardError
 #   Unknown type '' for column 'title'
 
+  create_table "statuses", force: :cascade do |t|
+    t.string "status"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "first_name", null: false
@@ -49,6 +53,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_16_173833) do
   add_foreign_key "avatars", "users"
   add_foreign_key "question_responsibles", "questions"
   add_foreign_key "question_responsibles", "users"
+  add_foreign_key "questions", "statuses", column: "statuses_id"
   add_foreign_key "questions", "users"
   add_foreign_key "questions", "users", column: "users_id"
 end
