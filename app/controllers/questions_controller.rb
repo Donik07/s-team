@@ -35,6 +35,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
+    @question.question_files.purge
     @question.destroy
     if @question.destroy
       flash[:times] = 'Ваша заявка была удалена'
@@ -79,10 +80,11 @@ class QuestionsController < ApplicationController
     end
   end
 
+
   private
 
   def question_params
-    params.require(:question).permit(:title, :body, :users_id, :statuses_id)
+    params.require(:question).permit(:title, :body, :users_id, :statuses_id, :question_files)
   end
 
   def set_question!

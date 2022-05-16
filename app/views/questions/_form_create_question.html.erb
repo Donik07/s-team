@@ -12,15 +12,23 @@
   <%= f.label "Подробное описание:" %>
 </div>
 <div>
-  <%= f.text_area :body, required: true, minlength: 2, class: "form-control" %>
+  <%= f.text_area :body, required: true, minlength: 2, class: "form-control", rows: 5 %>
+</div>
+
+<div class="files">
+  <p>Перетащите документ мышкой или нажимете <b><a href="#" type="file">здесь</a></b> чтобы прикрепить файл</p>
+</div>
+
+<div>
+  <%= f.file_field :question_files, class: "form-control" %>
 </div>
 
 <div class="mt-4 mb-2">
-  <%= f.label "Ответственный:" %>
+  <%= f.label "Выберите исполнителя:" %>
 </div>
 <div>
   <%= f.collection_select :users_id, users, :id, :last_name %>
 </div>
 
-<%= f.submit "Отправить", class: "w-100 btn btn-lg btn-primary", id: 'submit' %>
+<%= f.submit "Создать", class: "w-100 btn btn-lg btn-primary", id: 'submit' %>
 <% end %>

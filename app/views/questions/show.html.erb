@@ -47,6 +47,10 @@
       <p>Перетащите документ мышкой или нажимете <b><a href="#">здесь</a></b> чтобы прикрепить файл</p>
     </div>
 
+    <% @question.question_files.each do |t| %>
+      <%= link_to t.filename, rails_blob_path(t), target: :_blank %> <!--disposition: "attachment"-->
+    <%end %>
+
     <div class="question-info">
       <% created_at = @question.created_at %>
       <% updated_at = @question.updated_at %>

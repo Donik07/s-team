@@ -1,0 +1,3 @@
+class AddFile < ApplicationRecord
+
+end
