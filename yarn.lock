@@ -8,9 +8,9 @@
   integrity sha512-bdW8vKTlWXfoAvUud0a4OeVPrtdvHH8gTshKqndzxAI6bXGPBejgry2wvIz0OZOqOuWuFAJWgNCjq/6S85U77A==
 
 "@popperjs/core@^2.11.2":
-  version "2.11.2"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.2.tgz#830beaec4b4091a9e9398ac50f865ddea52186b9"
-  integrity sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==
+  version "2.11.5"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
+  integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
 
 bootstrap@^5.1.3:
   version "5.1.3"
@@ -18,8 +18,8 @@ bootstrap@^5.1.3:
   integrity sha512-fcQztozJ8jToQWXxVuEyXWW+dSo8AiXWKwiSSrKWsRB/Qt+Ewwza+JWoLKiTuQLaEPhdNAJ7+Dosc9DOIqNy7Q==
 
 tom-select@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/tom-select/-/tom-select-2.0.1.tgz#e3a6e6de61070274f746543f177107970a36b878"
-  integrity sha512-HTFf0OTwA2k8YCUqIZOenvr+ZrV4LMOUjCn3n5XS8wIpigcxKVvs5XRhBSGedhRJ8s+VmemIqy6rnabgBYX+6w==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/tom-select/-/tom-select-2.0.2.tgz#c2829cd17d996694aa3bc9e43a046c4951bd01d1"
+  integrity sha512-C78Ckq+r9B6lbIYSwV3R+6FPDCjRs49Wam+eaARnPxcekJI4SR78KKpb4QSg62y5mWYpKkxjKVZhslxZWIw6aQ==
   dependencies:
     "@orchidjs/sifter" "^0.9.1"

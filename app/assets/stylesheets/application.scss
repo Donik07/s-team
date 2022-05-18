@@ -412,6 +412,24 @@ main{
 }
 
 
+.files-container{
+  margin-top: 20px;
+  border: 2px dashed #6c757d7d;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.files-content{
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+}
+
+.file{
+  opacity: 0.6;
+  width: 90px;
+}
+
 
 
 
