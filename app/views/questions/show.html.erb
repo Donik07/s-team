@@ -43,6 +43,8 @@
       <p><%= @question.body %></p>
     </div>
 
+    <% unless @question.question_files.blank? %>
+
     <div class="files-container">
       <div class="files-content">
         <% @question.question_files.each do |t| %>
@@ -58,6 +60,10 @@
         <% end %>
       </div>
     </div>
+
+<!--      <h1 id="point">{{count}}</h1>-->
+
+      <% end %>
 
     <div class="files">
       <p>Перетащите документ мышкой или нажимете <b><a href="#">здесь</a></b> чтобы прикрепить файл</p>

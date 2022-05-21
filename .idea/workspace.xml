@@ -2,138 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32b01c2f-3c6c-4cac-81d7-361fa647d705" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/file_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/s-team.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/s-team.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/controllers/component_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/unknown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/importmap" beforeDir="false" afterPath="$PROJECT_DIR$/bin/importmap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/importmap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/importmap.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/enums.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/enums.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper-base.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper-base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper-base.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper-base.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper-lite.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper-lite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper-lite.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper-lite.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/cjs/popper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/esm/dom-utils/getOffsetParent.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/esm/dom-utils/getOffsetParent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/esm/modifiers/computeStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/esm/modifiers/computeStyles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/enums.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/enums.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/enums.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/enums.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-base.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-base.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-base.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-base.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-base.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-base.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-base.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-lite.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-lite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-lite.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-lite.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-lite.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-lite.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-lite.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper-lite.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/dist/umd/popper.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/modifiers/computeStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/modifiers/computeStyles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/modifiers/computeStyles.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/modifiers/computeStyles.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/types.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/lib/types.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@popperjs/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@popperjs/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.complete.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.complete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.complete.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.complete.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.popular.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.popular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.popular.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/tom-select.popular.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/cjs/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap4.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap4.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap4.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap4.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap4.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap4.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap5.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap5.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap5.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.default.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.default.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.default.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.default.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.default.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/css/tom-select.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/caret_position/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/caret_position/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/change_listener/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/change_listener/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/checkbox_options/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/checkbox_options/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/checkbox_options/plugin.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/checkbox_options/plugin.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/clear_button/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/clear_button/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/drag_drop/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/drag_drop/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/dropdown_header/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/dropdown_header/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/dropdown_input/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/dropdown_input/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/dropdown_input/plugin.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/dropdown_input/plugin.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/input_autogrow/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/input_autogrow/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/no_active_items/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/no_active_items/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/no_backspace_delete/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/no_backspace_delete/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/optgroup_columns/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/optgroup_columns/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/remove_button/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/remove_button/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/restore_on_backspace/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/restore_on_backspace/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/virtual_scroll/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/virtual_scroll/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/virtual_scroll/plugin.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/plugins/virtual_scroll/plugin.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.complete.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.complete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.complete.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.complete.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.popular.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.popular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.popular.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/tom-select.popular.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/esm/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/caret_position.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/caret_position.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/change_listener.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/change_listener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/checkbox_options.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/checkbox_options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/checkbox_options.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/checkbox_options.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/clear_button.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/clear_button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/drag_drop.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/drag_drop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/dropdown_header.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/dropdown_header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/dropdown_input.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/dropdown_input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/dropdown_input.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/dropdown_input.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/input_autogrow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/input_autogrow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/no_active_items.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/no_active_items.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/no_backspace_delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/no_backspace_delete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/optgroup_columns.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/optgroup_columns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/remove_button.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/remove_button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/restore_on_backspace.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/restore_on_backspace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/virtual_scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/virtual_scroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/virtual_scroll.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/plugins/virtual_scroll.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.base.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.base.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.base.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.base.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.base.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.base.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.complete.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.complete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.complete.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.complete.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.complete.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.complete.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.complete.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.complete.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.popular.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.popular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.popular.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.popular.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.popular.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.popular.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.popular.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/js/tom-select.popular.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/scss/plugins/dropdown_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/scss/plugins/dropdown_input.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/scss/tom-select.bootstrap5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/scss/tom-select.bootstrap5.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/scss/tom-select.default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/scss/tom-select.default.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/scss/tom-select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/scss/tom-select.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/dist/types/types/settings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/dist/types/types/settings.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/src/plugins/checkbox_options/plugin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/src/plugins/checkbox_options/plugin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/src/plugins/dropdown_input/plugin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/src/plugins/dropdown_input/plugin.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/src/plugins/dropdown_input/plugin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/src/plugins/dropdown_input/plugin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/src/scss/tom-select.bootstrap5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/src/scss/tom-select.bootstrap5.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/src/scss/tom-select.default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/src/scss/tom-select.default.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/src/scss/tom-select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/src/scss/tom-select.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/src/tom-select.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/src/tom-select.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tom-select/src/types/settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tom-select/src/types/settings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,17 +58,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ganie/ruby/s-team/app/helpers&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Ganie/ruby/s-team/app/helpers",
+    "nodejs_package_manager_path": "yarn",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\RubyMine 2021.3.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ganie\ruby\s-team\app\helpers" />
@@ -386,7 +265,8 @@
       <workItem from="1652740434544" duration="1757000" />
       <workItem from="1652789100183" duration="1934000" />
       <workItem from="1652822025662" duration="914000" />
-      <workItem from="1652885674964" duration="3818000" />
+      <workItem from="1652885674964" duration="11313000" />
+      <workItem from="1652979589727" duration="8126000" />
     </task>
     <servers />
   </component>
@@ -408,6 +288,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/s_team@Development__s_team.rcov" NAME="Development: s-team Coverage Results" MODIFIED="1652885927062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="s-team" />
+    <SUITE FILE_PATH="coverage/s_team@Development__s_team.rcov" NAME="Development: s-team Coverage Results" MODIFIED="1653123050135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="s-team" />
   </component>
 </project>
