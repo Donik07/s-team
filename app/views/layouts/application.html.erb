@@ -57,6 +57,7 @@
         <ul class="dropdown-menu" id="dropdown-menu">
           <li><%= link_to 'Профиль', edit_user_path(current_user), class: "dropdown-item" %></li>
           <li><%= link_to 'Архив', archives_path, class: "dropdown-item" %></li>
+          <li><%= link_to 'Новый проект', new_project_path, class: "dropdown-item" %></li>
           <div class="dropdown-divider"></div>
           <li><%= link_to 'Выход', session_path, class: "dropdown-item btn-danger text-white",
                          id: "exit", :method => :delete %></li>

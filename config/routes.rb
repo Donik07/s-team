@@ -3,6 +3,7 @@
 Rails.application.routes.draw do
   resource :session, only: %i[new create destroy]
   resources :users, only: %i[new create destroy edit update]
+  resources :projects, only: %i[new create destroy edit update]
   resources :archives
 
   resources :questions do

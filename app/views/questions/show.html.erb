@@ -43,31 +43,29 @@
       <p><%= @question.body %></p>
     </div>
 
-    <% unless @question.question_files.blank? %>
-
+    <% if @question.question_files.attached? %>
     <div class="files-container">
-      <div class="files-content">
-        <% @question.question_files.each do |t| %>
+      <% @question.question_files.each do |t| %>
+        <div class="files-content">
           <%= link_to rails_blob_path(t), target: :_blank do %>
             <%= image_tag "file_icon.png", class: 'file' %>
-            <div>
-              <%= t.filename %>
-            </div>
-            <div>
-              <%= link_to 'Скачать', rails_blob_path(t, disposition: "attachment") %>
-            </div>
+          <div>
+            <%= t.filename %>
+          </div>
+          <div>
+            <%= link_to 'Скачать', rails_blob_path(t, disposition: "attachment") %>
+          </div>
           <% end %>
-        <% end %>
-      </div>
-    </div>
-
-<!--      <h1 id="point">{{count}}</h1>-->
-
+        </div>
       <% end %>
+    </div>
+    <% end %>
+<!--          <h1 id="point">{{count}}</h1>-->
 
     <div class="files">
       <p>Перетащите документ мышкой или нажимете <b><a href="#">здесь</a></b> чтобы прикрепить файл</p>
     </div>
+
 
     <div class="question-info">
       <% created_at = @question.created_at %>

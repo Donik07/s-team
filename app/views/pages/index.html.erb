@@ -2,6 +2,9 @@
 
 <div class="mt-3 mb-5">
   <h1>Все заявки</h1>
+  <%#= form_with model: @questions.first do |f| %>
+    <%#= f.collection_select :project_id, @collection_projects, :id, :project_name %>
+  <%# end %>
   <%= link_to image_tag("plus.svg"), new_question_path, id: 'plus' %>
 </div>
 
@@ -28,7 +31,7 @@
 
         <div class="card-info">
           <h3 class="mb-4 mt-0">
-            <%= truncate question.title, length: 50 %>
+            <%= link_to "#{truncate question.title}", question_path(question), length: 50, class: 'link_title' %>
           </h3>
           <p>
             <%= truncate question.body, length: 80 %>
@@ -72,7 +75,7 @@
 
           <div class="card-info">
             <h3 class="mb-4 mt-0">
-              <%= truncate question.title, length: 50 %>
+              <%= link_to "#{truncate question.title}", question_path(question), length: 50, class: 'link_title' %>
             </h3>
             <p>
               <%= truncate question.body, length: 80 %>
@@ -116,7 +119,7 @@
 
         <div class="card-info">
           <h3 class="mb-4 mt-0">
-            <%= truncate question.title, length: 50 %>
+            <%= link_to "#{truncate question.title}", question_path(question), length: 50, class: 'link_title' %>
           </h3>
           <p>
             <%= truncate question.body, length: 80 %>

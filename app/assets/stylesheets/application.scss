@@ -1,5 +1,5 @@
-@import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap-sprockets";
 
 
 ::-webkit-scrollbar {
@@ -67,7 +67,6 @@ main{
   left: 38%;
 }
 #dropdown-menu a{
-  width: 60%;
   text-align: center;
   border-radius: 7px;
   margin: 0 auto;
@@ -75,6 +74,9 @@ main{
 }
 .nav_border{
   border-bottom: 1px solid #6c757d;
+}
+#exit{
+  width: 60%;
 }
 #exit:hover{
   background-color: #c9302c;
@@ -275,14 +277,17 @@ main{
     text-align: center;
     margin-top: 20px;
     color: #6c757d;
+    z-index: 0;
   }
   .files p{
     opacity: 0.7;
     padding: 15px;
     margin: 0;
   }
-  .files p:hover{
-    opacity: 1;
+  .background-files{
+    margin-top: -44px;
+    opacity: 0;
+    z-index: 1;
   }
   .question-info{
     border-radius: 7px;
@@ -430,6 +435,12 @@ main{
   width: 90px;
 }
 
+.link_title{
+  color: #4e535b;
+}
+.link_title:hover{
+  color: #4e535b;
+}
 
 
 

@@ -77,5 +77,9 @@ group :development do
 end
 
 gem 'bootstrap-sass'
+gem 'bootstrap'
 gem 'sassc'
 gem 'sass-rails'
+
+gem 'active_storage_validations'
+gem 'sidekiq'

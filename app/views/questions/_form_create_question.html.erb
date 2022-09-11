@@ -1,6 +1,13 @@
 <%= form_with model: @question do |f| %>
 
 <div class="mt-4 mb-2">
+  <%= f.label "Проект:" %>
+</div>
+<div>
+  <%= f.collection_select :project_id, projects, :id, :project_name %>
+</div>
+
+<div class="mt-4 mb-2">
   <%= f.label "Тема:" %>
 </div>
 <div>
@@ -15,13 +22,16 @@
   <%= f.text_area :body, required: true, minlength: 2, class: "form-control", rows: 5 %>
 </div>
 
-<div class="files">
-  <p>Перетащите документ мышкой или нажимете <b><a href="#" type="file">здесь</a></b> чтобы прикрепить файл</p>
-</div>
+<% if @question.new_record? %>
+  <div class="files">
+    <p>Перетащите документ мышкой или нажимете <b><a href="#" type="file">здесь</a></b> чтобы прикрепить файл</p>
+  </div>
 
-<div>
-  <%= f.file_field :question_files, class: "form-control" %>
-</div>
+
+  <div class="background-files">
+    <%= f.file_field :question_files, multiple: true, class: "form-control" %>
+  </div>
+<% end %>
 
 <div class="mt-4 mb-2">
   <%= f.label "Выберите исполнителя:" %>

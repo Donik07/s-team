@@ -4,6 +4,7 @@ class QuestionsController < ApplicationController
   before_action :require_authentication
   before_action :set_question!, only: %i[show destroy edit update start_working completed_working send_to_archive back_to_active]
   before_action :fetch_question_responsible, only: %i[new edit]
+  before_action :fetch_projects, only: %i[new edit]
 
   def index
     @questions = Question.includes(:user).where(user_id: current_user).where.not(statuses_id: 4).page(params[:page]).per(10).order(:statuses_id, created_at: :desc)
@@ -19,7 +20,9 @@ class QuestionsController < ApplicationController
       flash[:check] = 'Заявка создана!'
       redirect_to questions_path
     else
-      render :new
+      redirect_to new_question_path
+      flash[:times] = "Ошибка, файл слишком большой!"
+      # render :new
     end
   end
 
@@ -35,7 +38,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    @question.question_files.purge
+    @question.question_files.purge_later
     @question.destroy
     if @question.destroy
       flash[:times] = 'Ваша заявка была удалена'
@@ -68,6 +71,8 @@ class QuestionsController < ApplicationController
     @question.update(statuses_id: 4)
     if @question.update(statuses_id: 4)
       flash[:times] = "Заявка перенесена в «Архив»"
+      DestroyInArchiveJob.perform_async('bob')
+      # DestroyInArchiveJob.deliver_later(wait: 1.second)
       redirect_to questions_path
     end
   end
@@ -84,7 +89,7 @@ class QuestionsController < ApplicationController
   private
 
   def question_params
-    params.require(:question).permit(:title, :body, :users_id, :statuses_id, :question_files)
+    params.require(:question).permit(:title, :body, :users_id, :statuses_id, :project_id, question_files: [])
   end
 
   def set_question!
@@ -94,4 +99,9 @@ class QuestionsController < ApplicationController
   def fetch_question_responsible
     @question_responsibles = User.all
   end
+
+  def fetch_projects
+    @collection_projects = Project.all
+  end
+
 end

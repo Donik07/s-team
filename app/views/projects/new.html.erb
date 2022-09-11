@@ -1,0 +1,18 @@
+<% provide :page_name, "Создание нового проекта" %>
+
+<div class="main_form">
+  <h1>Новый проект</h1>
+
+<%= form_with model: @project do |f| %>
+
+  <div class="mt-4 mb-2">
+    <%= f.label "Название проекта:" %>
+  </div>
+  <div>
+    <%= f.text_field :project_name, required: true, placeholder: 'Укажите название нового проекта',
+                     class: "form-control", autocomplete: "off", autofocus: true %>
+  </div>
+
+  <%= f.submit "Создать", class: "w-100 btn btn-lg btn-primary", id: 'submit' %>
+<% end %>
+</div>
